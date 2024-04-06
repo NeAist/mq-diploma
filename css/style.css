@@ -836,7 +836,7 @@ a {
 
 
 
-@media (max-device-width: 1200px) and (min-device-width: 641px) {
+@media (max-width: 1200px) and (min-width: 641px) {
 	.header-content {
 		background-image: url(../images/banner-bg-tablet.jpg);
 	}
@@ -872,7 +872,7 @@ a {
 }
 
 
-@media (max-device-width: 1200px) and (min-device-width: 641px) and (orientation: landscape) {
+@media (max-height: 1200px) and (min-height: 641px) and (orientation: landscape) {
 	.trends {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
@@ -880,7 +880,7 @@ a {
 
 
 
-@media (max-device-width: 640px) {
+@media (max-width: 640px) {
 	.header-content {
 		background-image: url(../images/banner-mobile.jpg);
 	}
@@ -953,7 +953,7 @@ a {
 	}
 }
 
-@media (max-device-width: 640px) and (orientation: landscape) {
+@media (max-height: 640px) and (orientation: landscape) {
 	.trends {
 		grid-template-columns: 1fr 1fr;
 	}
