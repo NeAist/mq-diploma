@@ -108,6 +108,17 @@ a {
 	text-decoration: underline;
 }
 
+.hamburger-lines {
+	display: none;
+}
+
+.line {
+	width: 23px;
+	height: 3px;
+	background-color: #ffffff;
+	margin: 5px 0;
+}
+
 .intro	{
 	text-align: center;
 	color: #fff;
@@ -136,8 +147,6 @@ a {
 	z-index: 2;
 
 	background-color: rgba(0, 0, 0, 0.6);
-
-	display: none;
 }
 
 .popup {
@@ -289,6 +298,10 @@ a {
 
 .popup-btn:hover {
 	background-color: #323232;
+}
+
+._hidden {
+	display: none;
 }
 
 /* Тренды */
@@ -703,6 +716,11 @@ a {
 	flex-direction: column;
 }
 
+.items-preview {
+	display: flex;
+	justify-content: center;
+}
+
 .items-img {
 	padding: 0 23px;
 	min-height: 204px;
@@ -814,4 +832,116 @@ a {
 	font-size: 12px;
 	color: #999999;
 	text-align: center;
+}
+
+
+
+@media (max-width: 1200px) and (min-width: 768px) {
+	.header-content {
+		background-image: url(../images/banner-bg-tablet.jpg);
+	}
+
+	.trends {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.items {
+		grid-template-columns: 1fr 1fr;
+		gap: 28px 23px;
+	}
+
+	.posts__row {
+		flex-direction: column;
+	}
+
+	.container {
+		padding: 0 35px;
+	}
+
+	.container-main {
+		gap: 35px;
+	}
+
+	.menu__item {
+		display: none;
+	}
+
+	.hamburger-lines {
+		display: block;
+	}
+}
+
+
+
+@media (max-width: 767px) and (min-width: 360px) {
+	.header-content {
+		background-image: url(../images/banner-mobile.jpg);
+	}
+
+	.trends {
+		grid-template-columns: 1fr;
+	}
+
+	.items {
+		grid-template-columns: 1fr;
+		gap: 28px 23px;
+	}
+	
+	.container-main {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.posts__row {
+		flex-direction: column;
+	}
+
+	.menu__item {
+		display: none;
+	}
+
+	.hamburger-lines {
+		display: block;
+	}
+
+	.posts__row-img {
+		min-width: 330px;
+		max-width: 330px;
+
+	}
+
+	.intro {
+		font-size: 26px;
+		width: 100%;
+		margin-top: 42px;
+	}
+
+	.header-nav {
+		flex-direction: column-reverse;
+		gap: 170px;
+	}
+
+	.menu-container {
+		align-self: flex-end;
+	}
+
+	.logo-img {
+		width: 269px;
+	}
+
+	.sidebar {
+		width: 100%;
+	}
+
+	.last-news__search-group__field {
+		width: 100%;
+	}
+
+	.last-news__search-group__button {
+		flex-shrink: 0;
+	}
+
+	.posts__row {
+		align-items: center;
+	}
 }

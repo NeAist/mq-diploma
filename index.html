@@ -12,7 +12,7 @@
 		<div class="container">
 			<div class="header-nav">
 				<a href="#" class="logo"><img src="svg/noemi-logo.svg" class="logo-img" alt=""></a>
-				<nav>
+				<nav class="menu-container">
 					<ul class="menu">
 						<li class="menu__item"><a href="#" class="menu__item__link">главная</a></li>
 						<li class="menu__item"><a href="#" class="menu__item__link">посты</a></li>
@@ -21,13 +21,18 @@
 						<li class="menu__item"><a href="#" class="menu__item__link">темы</a></li>
 						<li class="menu__item"><a href="#" class="menu__item__link">контакты</a></li>
 					</ul>
+					<div class="hamburger-lines">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
 				</nav>
 			</div>
 			<h1 class="intro">Блог о творчестве, спорте, и образе жизни</h1>
 		</div>
 	</header>
 	<!-- Popup -->
-	<div class="popup-container">
+	<div class="popup-container _hidden">
 		<form class="popup" action="#">
 			<button type="button" class="popup-close"></button>
 			<h3 class="popup-header">Ваш фидбек</h3>
@@ -261,7 +266,18 @@
 		<h2 class="trends-header">Наши изделия</h2>
 		<section class="items">
 			<article class="items-post">
-				<img src="images/shop-item-desk1.jpg" alt="Подушка" class="items-img">
+				<picture class="items-preview">
+					<source
+					media="(min-width: 1200px)"
+					srcset="images/shop-item-desk1.jpg">
+					<source
+					media="(min-width: 768px)"
+					srcset="images/shop-item-tablet1.jpg">
+					<source
+					media="(min-width: 360px)"
+					srcset="images/shop-item-mobile1.jpg">
+					<img src="images/shop-item-desk1.jpg" alt="Подушка" class="items-img">
+				</picture>
 				<div class="items__content">
 					<h3 class="items__content-header">Подушки на диван</h3>
 					<p class="items__content-text">Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="text-highlight">здесь</a>.</p>
@@ -275,7 +291,18 @@
 				</div>
 			</article>
 			<article class="items-post">
-				<img src="images/shop-item-desk2.jpg" alt="Кукла зайчика" class="items-img">
+				<picture class="items-preview">
+					<source
+					media="(min-width: 1200px)"
+					srcset="images/shop-item-desk2.jpg">
+					<source
+					media="(min-width: 768px)"
+					srcset="images/shop-item-tablet2.jpg">
+					<source
+					media="(min-width: 360px)"
+					srcset="images/shop-item-mobile2.jpg">
+					<img src="images/shop-item-desk1.jpg" alt="Подушка" class="items-img">
+				</picture>
 				<div class="items__content">
 					<h3 class="items__content-header">Кукла «Зайчик»</h3>
 					<p class="items__content-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="text-highlight">весенняя серия постов</a> в блоге и несколько подкастов.</p>
@@ -288,7 +315,18 @@
 				</div>
 			</article>
 			<article class="items-post">
-				<img src="images/shop-item-desk3.jpg" alt="Декоративная рамка" class="items-img">
+				<picture class="items-preview">
+					<source
+					media="(min-width: 1200px)"
+					srcset="images/shop-item-desk3.jpg">
+					<source
+					media="(min-width: 768px)"
+					srcset="images/shop-item-tablet3.jpg">
+					<source
+					media="(min-width: 360px)"
+					srcset="images/shop-item-mobile3.jpg">
+					<img src="images/shop-item-desk1.jpg" alt="Подушка" class="items-img">
+				</picture>
 				<div class="items__content">
 					<h3 class="items__content-header">Шестиугольная рамка</h3>
 					<p class="items__content-text">Необычная рамка для украшения дома из видео <a href="#" class="text-highlight">«Как сделать рамку из подручных средств за 30 минут»</a></p>
