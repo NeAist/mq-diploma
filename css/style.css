@@ -836,7 +836,7 @@ a {
 
 
 
-@media (max-width: 1200px) and (min-width: 768px) {
+@media (max-device-width: 1200px) and (min-device-width: 641px) {
 	.header-content {
 		background-image: url(../images/banner-bg-tablet.jpg);
 	}
@@ -872,8 +872,15 @@ a {
 }
 
 
+@media (max-device-width: 1200px) and (min-device-width: 641px) and (orientation: landscape) {
+	.trends {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
 
-@media (max-width: 767px) and (min-width: 360px) {
+
+
+@media (max-device-width: 640px) {
 	.header-content {
 		background-image: url(../images/banner-mobile.jpg);
 	}
@@ -943,5 +950,11 @@ a {
 
 	.posts__row {
 		align-items: center;
+	}
+}
+
+@media (max-device-width: 640px) and (orientation: landscape) {
+	.trends {
+		grid-template-columns: 1fr 1fr;
 	}
 }
