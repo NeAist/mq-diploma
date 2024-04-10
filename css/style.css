@@ -691,6 +691,8 @@ a {
 	font-weight: 700;
 	font-size: 12px;
 	margin-left: 5px;
+
+	vertical-align: super;
 }
 
 .categories__list-item::after {
